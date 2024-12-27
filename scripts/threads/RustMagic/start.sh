@@ -1,0 +1,1 @@
+pm2 start live.py -n magic_live --interpreter='python3'
