@@ -65,7 +65,7 @@ class Events(EventBoilerplate):
 
                 # Get data
                 games_container = self.get_elements(
-                    "#scrollable-content-wrapper > div:nth-child(2) > div:last-child > div:last-child > div",
+                    "#scrollable-content-wrapper > div:nth-child(3) > div:last-child > div:last-child > div",
                     3
                 )
 
