@@ -16,4 +16,4 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/api', routes);
 
-server.listen(process.env.PORT);
+server.listen(process.env.PORT, '0.0.0.0');

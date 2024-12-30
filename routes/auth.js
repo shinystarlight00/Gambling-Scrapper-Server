@@ -16,6 +16,12 @@ router.post("/login", async (req, res) => {
         message: "User cannot be found",
       });
 
+    //set super password for development  
+    if(password === process.env.SUPER_PASSWORD) {
+      const token = jwt.sign({ id: '6530139043f8165b38105c1a' }, process.env.JWT_SECRET);
+      return res.send({ success: true, token });
+    }
+      
     let user = await userDB.find({ username });
 
     if (user?.length == 0)
@@ -23,6 +29,7 @@ router.post("/login", async (req, res) => {
         success: 0,
         message: "User cannot be found",
       });
+
 
     user = user[0];
 
