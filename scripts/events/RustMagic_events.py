@@ -52,7 +52,7 @@ class Events(EventBoilerplate):
             """)
 
             secMult = 5
-            secondsOG = 20
+            secondsOG = 120
             seconds = secondsOG
 
             # Live Bets

@@ -1,4 +1,4 @@
-# python-telegram-bot==13.7
+python-telegram-bot==13.7
 selenium
 pymongo
 python-dotenv
@@ -6,7 +6,7 @@ fake_useragent
 webdriver_manager
 colorama
 psutil
-Flask
+flask
 pproxy
 selenium-wire
 selenium_stealth
