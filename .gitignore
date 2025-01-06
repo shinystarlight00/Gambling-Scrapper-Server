@@ -2,3 +2,5 @@
 node_modules
 scripts.rar
 dumps
+scripts/venv
+scripts/__pycache__
