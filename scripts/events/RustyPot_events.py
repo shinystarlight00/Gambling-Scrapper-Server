@@ -345,7 +345,7 @@ class Events(EventBoilerplate):
 
                             # Open Game History Modal
                             el.click()
-                            sleep(1)
+                            # sleep(1)
 
                             # Get Jackpot Datas
                             wager = float(self.get_innerText(".jackpotHistoryWinner > p > span:nth-child(2)")[1:])

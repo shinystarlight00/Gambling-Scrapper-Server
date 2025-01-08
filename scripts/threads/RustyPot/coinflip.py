@@ -29,6 +29,8 @@ class RustyPot:
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument('--user-agent={}'.format(ua.chrome))
         chrome_options.add_experimental_option("detach", True)
+        chrome_options.add_argument('--proxy-server=http://localhost:8080')
+
 
         self.driver = webdriver.Chrome(
             service = ChromeService(ChromeDriverManager().install()),
